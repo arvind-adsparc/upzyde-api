@@ -19,15 +19,21 @@ const contactSchema = new mongoose.Schema({
     unique: true,
     lowercase: true,
   },
-  type: {
+  companyType: {
     type: String,
     required: [true, "Please select a company type"],
   },
   message: {
     type: String,
+    required: false,
+  },
+  formName: {
+    type: String,
+    required: false,
   },
   page: {
     type: String,
+    required: false,
   },
   createdAt: {
     type: Date,

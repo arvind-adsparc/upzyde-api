@@ -10,6 +10,9 @@ const submissionSchema = new mongoose.Schema({
   page: {
     type: String,
   },
+  formName: {
+    type: String,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
