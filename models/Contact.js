@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const requestDemoSchema = new mongoose.Schema({
+const contactSchema = new mongoose.Schema({
   firstName: {
     type: String,
     required: [true, "Please enter your first name"],
@@ -9,15 +9,22 @@ const requestDemoSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter your last name"],
   },
+  company: {
+    type: String,
+    required: [true, "Please enter your company name"],
+  },
   email: {
     type: String,
     required: [true, "Please enter your email"],
     unique: true,
     lowercase: true,
   },
-  format: {
+  type: {
     type: String,
-    required: [true, "Please enter a format"],
+    required: [true, "Please select a company type"],
+  },
+  message: {
+    type: String,
   },
   page: {
     type: String,
@@ -28,6 +35,6 @@ const requestDemoSchema = new mongoose.Schema({
   },
 });
 
-const RequestDemo = mongoose.model("requestDemo", requestDemoSchema);
+const Contact = mongoose.model("contact", contactSchema);
 
-module.exports = RequestDemo;
+module.exports = Contact;
