@@ -12,12 +12,15 @@ const requestDemoSchema = new mongoose.Schema({
   email: {
     type: String,
     required: [true, "Please enter your email"],
-    unique: true,
     lowercase: true,
   },
   format: {
     type: String,
     required: [true, "Please enter a format"],
+  },
+  formName: {
+    type: String,
+    required: false,
   },
   page: {
     type: String,

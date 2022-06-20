@@ -18,15 +18,8 @@ export default async function handler(req, res) {
     case "POST":
       try {
         console.log("getting this far");
-        const { firstName, lastName, email, format, page } = req.body;
 
-        const submission = await RequestDemo.create({
-          firstName,
-          lastName,
-          email,
-          format,
-          page,
-        });
+        const submission = await RequestDemo.create(req.body);
         res.status(201).json({ success: true, data: submission });
       } catch (err) {
         console.log("getting this far 2");
