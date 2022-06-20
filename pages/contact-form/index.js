@@ -8,13 +8,13 @@ const { Title } = Typography;
 const columns = [
   {
     title: "First Name",
-    dataIndex: "fname",
-    key: "fname",
+    dataIndex: "firstName",
+    key: "firstName",
   },
   {
     title: "Last Name",
-    dataIndex: "lname",
-    key: "lname",
+    dataIndex: "lastName",
+    key: "lastName",
   },
   {
     title: "Company",
