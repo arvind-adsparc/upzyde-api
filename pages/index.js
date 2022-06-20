@@ -16,7 +16,9 @@ export default function Home() {
 
         <div className="grid-container">
           <div className="card">
-            <h2>Newsletter Form &rarr;</h2>
+            <Link href="/newsletter-form">
+              <h2>Newsletter Form &rarr;</h2>
+            </Link>
           </div>
           <div className="card">
             <Link href="/request-demo">

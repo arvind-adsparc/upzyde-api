@@ -17,7 +17,9 @@ export default async function handler(req, res) {
   switch (method) {
     case "GET":
       try {
-        const data = await Submission.find();
+        const { form } = req.query;
+
+        const data = await Submission.find({ formName: form });
         res.status(200).json({ data: data });
       } catch (err) {
         console.log("err", err);
