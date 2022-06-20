@@ -26,7 +26,9 @@ export default function Home() {
             </Link>
           </div>
           <div className="card">
-            <h2>Increase Revenue Form &rarr;</h2>
+            <Link href="/revenue-form">
+              <h2>Increase Revenue Form &rarr;</h2>
+            </Link>
           </div>
 
           <div className="card">
