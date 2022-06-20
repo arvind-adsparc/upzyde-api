@@ -5,6 +5,7 @@ const submissionSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter your email"],
     lowercase: true,
+    unique: false,
   },
   page: {
     type: String,
