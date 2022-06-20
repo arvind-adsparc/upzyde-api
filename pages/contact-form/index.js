@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Typography, Spin, Table } from "antd";
+import { Typography, Spin, Space, Table, Button } from "antd";
 import moment from "moment";
 
 import Layout from "../../components/Layout/layout";
@@ -41,6 +41,17 @@ const columns = [
     title: "Created At",
     dataIndex: "createdAt",
     key: "createdAt",
+  },
+  {
+    title: "Action",
+    key: "action",
+    render: (_, record) => (
+      <Space size="middle">
+        <Button type="text" danger onClick={() => console.log(record)}>
+          Delete
+        </Button>
+      </Space>
+    ),
   },
 ];
 
