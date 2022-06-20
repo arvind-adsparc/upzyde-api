@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Card } from "antd";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -54,7 +55,9 @@ export default function Home() {
                 width: 300,
               }}
             >
-              <h2>Contact Us Form &rarr;</h2>
+              <Link href="/contact-form">
+                <h2>Contact Us Form &rarr;</h2>
+              </Link>
             </Card>
           </div>
         </div>
