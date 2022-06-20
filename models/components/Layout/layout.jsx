@@ -1,11 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Layout = ({ children }) => {
   return (
     <div className="layout-container">
       <div className="header">
         <div className="inner-container">
-          <div className="head-logo">upzyde</div>
+          <div className="head-logo">
+            <Link href="/">upzyde</Link>
+          </div>
         </div>
       </div>
 
