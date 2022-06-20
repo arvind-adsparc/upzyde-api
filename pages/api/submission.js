@@ -15,6 +15,14 @@ export default async function handler(req, res) {
   await dbConnect();
 
   switch (method) {
+    case "GET":
+      try {
+        const data = await Submission.find();
+        res.status(200).json({ data: data });
+      } catch (err) {
+        console.log("err", err);
+      }
+      break;
     case "POST":
       try {
         console.log("getting this far");
