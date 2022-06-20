@@ -59,7 +59,7 @@ const RequestDemoForm = () => {
             email: info.email,
             format: info.format,
             page: info.page,
-            createdAt: moment().format(info.createdAt),
+            createdAt: moment(info.createdAt).format("lll"),
           };
         });
 

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Typography, Spin, Space, Table, Tag } from "antd";
+import { Typography, Spin, Table } from "antd";
+import moment from "moment";
 
 import Layout from "../../models/components/Layout/layout";
 
@@ -36,6 +37,11 @@ const columns = [
     dataIndex: "message",
     key: "message",
   },
+  {
+    title: "Created At",
+    dataIndex: "createdAt",
+    key: "createdAt",
+  },
 ];
 
 const ContactForm = () => {
@@ -59,6 +65,7 @@ const ContactForm = () => {
             email: info.email,
             companyType: info.companyType,
             message: info.message,
+            createdAt: moment(info.createdAt).format("lll"),
           };
         });
 

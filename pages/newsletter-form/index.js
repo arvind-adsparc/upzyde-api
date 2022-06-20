@@ -36,7 +36,7 @@ const Newsletter = () => {
           return {
             key: info._id,
             email: info.email,
-            createdAt: moment().format(info.createdAt),
+            createdAt: moment(info.createdAt).format("lll"),
           };
         });
 
