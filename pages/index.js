@@ -19,7 +19,9 @@ export default function Home() {
             <h2>Newsletter Form &rarr;</h2>
           </div>
           <div className="card">
-            <h2>Request Demo Form &rarr;</h2>
+            <Link href="/request-demo">
+              <h2>Request Demo Form &rarr;</h2>
+            </Link>
           </div>
           <div className="card">
             <h2>Increase Revenue Form &rarr;</h2>
