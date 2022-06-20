@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../models/components/Layout/layout";
+
+import Layout from "../components/Layout/layout";
 
 export default function Home() {
   return (

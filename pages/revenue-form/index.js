@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Typography, Spin, Table } from "antd";
 import moment from "moment";
 
-import Layout from "../../models/components/Layout/layout";
+import Layout from "../../components/Layout/layout";
 
 const { Title } = Typography;
 
