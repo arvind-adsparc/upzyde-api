@@ -52,6 +52,7 @@ const ContactForm = () => {
 
         const modifiedData = result.data.map((info) => {
           return {
+            key: info._id,
             firstName: info.firstName,
             lastName: info.lastName,
             company: info.company,
